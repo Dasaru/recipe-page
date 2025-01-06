@@ -1,8 +1,234 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+/* Reset Styles */
+* {
+  box-sizing: border-box;
 }
 
-.attribution a {
+html {
+  font-size: 62.5%;
+}
+
+/* Variables */
+:root {
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+  --brown-800: #854632;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Outfit-Regular";
+  src: url("/assets/fonts/outfit/static/Outfit-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Outfit-SemiBold";
+  src: url("/assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Outfit-Light";
+  src: url("/assets/fonts/outfit/static/Outfit-Light.ttf");
+}
+
+@font-face {
+  font-family: "YoungSerif-Regular";
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+/* General Styles */
+
+/* Header Styles */
+
+/* Content Styles */
+.b-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.b-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 40px 32px;
+}
+
+.b-content hr {
+  width: 100%;
+  border: 0.1rem solid var(--stone-150, lightgrey);
+}
+
+.b-content__title h1 {
+  font-size: 3.6rem;
+  font-family: "YoungSerif-Regular";
+  color: var(--stone-900, black);
+  margin-bottom: 2.4rem;
+}
+
+.b-content__title p {
+  font-size: 1.6rem;
+  font-family: "Outfit-Light";
+  line-height: 150%;
+  color: var(--stone-600, black);
+}
+
+.b-content__preparation {
+  background-color: var(--rose-50, pink);
+  border-radius: 1.2rem;
+  padding: 24px;
+}
+
+.b-content__preparation h2 {
+  font-size: 2rem;
+  font-family: "Outfit-SemiBold";
+  color: var(--rose-800, red);
+  margin-bottom: 1.6rem;
+}
+
+.b-content__preparation ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit-Regular";
+  gap: 0.8rem;
+}
+
+.b-content__preparation li {
+  list-style-type: disc;
+  margin-left: 2rem;
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--stone-600, black);
+}
+
+.b-content__preparation li::marker {
+  color: var(--brown-800, red);
+}
+
+.b-content__preparation strong {
+  font-weight: bold;
+}
+
+.b-content__ingredients h2 {
+  font-size: 2.8rem;
+  font-family: "YoungSerif-Regular";
+  color: var(--brown-800, red);
+  margin-bottom: 2.4rem;
+}
+
+.b-content__ingredients ul {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit-Regular";
+  gap: 0.8rem;
+}
+
+.b-content__ingredients li {
+  list-style-type: disc;
+  margin-left: 2rem;
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--stone-600, black);
+}
+
+.b-content__ingredients li::marker {
+  color: var(--brown-800, red);
+}
+
+.b-content__instructions h2 {
+  font-family: "YoungSerif-Regular";
+  font-size: 2.8rem;
+  color: var(--brown-800, red);
+  margin-bottom: 2.4rem;
+}
+
+.b-content__instructions ol {
+  display: flex;
+  flex-direction: column;
+  font-family: "Outfit-Regular";
+  gap: 0.8rem;
+}
+
+.b-content__instructions li {
+  list-style-type: decimal;
+  margin-left: 2rem;
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--stone-600, black);
+}
+
+.b-content__instructions li::marker {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: var(--brown-800, red);
+}
+
+.b-content__instructions strong {
+  font-weight: bold;
+}
+
+.b-content__nutrition {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.b-content__nutrition h2 {
+  font-family: "YoungSerif-Regular";
+  font-size: 2.8rem;
+  color: var(--brown-800, red);
+}
+
+.b-content__nutrition p {
+  font-size: 1.6rem;
+  font-family: "Outfit-Regular";
+  line-height: 150%;
+  color: var(--stone-600, black);
+}
+
+.b-content__nutrition table {
+  font-size: 1.6rem;
+  font-family: "Outfit-Regular";
+  line-height: 150%;
+  color: var(--stone-600, black);
+}
+
+.b-content__nutrition tr {
+  border-bottom: 1px solid var(--stone-150, lightgrey);
+}
+
+.b-content__nutrition td {
+  padding: 1.2rem 3.2rem;
+}
+
+.b-content__nutrition td:nth-child(2) {
+  color: var(--brown-800, red);
+  font-weight: bold;
+}
+
+.b-content__nutrition tr:last-child {
+  border-bottom: none;
+}
+
+/* Footer Sytles */
+.b-attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  position: relative;
+  bottom: 1.5rem;
+}
+
+.b-attribution a {
   color: hsl(228, 45%, 44%);
 }
