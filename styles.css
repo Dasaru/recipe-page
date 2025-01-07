@@ -1,4 +1,4 @@
-/* Reset Styles */
+/***** Reset Styles *****/
 * {
   box-sizing: border-box;
 }
@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 
-/* Variables */
+/***** Variables *****/
 :root {
   --rose-800: #7a284e;
   --rose-50: #fff7fb;
@@ -18,8 +18,7 @@ html {
   --brown-800: #854632;
 }
 
-/* Fonts */
-
+/***** Fonts *****/
 @font-face {
   font-family: "Outfit";
   src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
@@ -45,11 +44,9 @@ html {
   src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
 }
 
-/* General Styles */
+/***** Content Styles *****/
 
-/* Header Styles */
-
-/* Content Styles */
+/***** Mobile Styles *****/
 .b-card {
   display: flex;
   flex-direction: column;
@@ -58,8 +55,8 @@ html {
 .b-content {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  margin: 40px 32px;
+  gap: 3.2rem;
+  margin: 4rem 3.2rem;
 }
 
 .b-content hr {
@@ -82,15 +79,15 @@ html {
 }
 
 .b-content__preparation {
-  background-color: var(--rose-50, pink);
+  background-color: var(--rose-50, mistyrose);
   border-radius: 1.2rem;
-  padding: 24px;
+  padding: 2.4rem;
 }
 
 .b-content__preparation h2 {
   font-size: 2rem;
   font-family: "Outfit-SemiBold";
-  color: var(--rose-800, red);
+  color: var(--rose-800, brown);
   margin-bottom: 1.6rem;
 }
 
@@ -111,7 +108,7 @@ html {
 }
 
 .b-content__preparation li::marker {
-  color: var(--brown-800, red);
+  color: var(--brown-800, brown);
 }
 
 .b-content__preparation strong {
@@ -121,7 +118,7 @@ html {
 .b-content__ingredients h2 {
   font-size: 2.8rem;
   font-family: "YoungSerif-Regular";
-  color: var(--brown-800, red);
+  color: var(--brown-800, brown);
   margin-bottom: 2.4rem;
 }
 
@@ -142,13 +139,13 @@ html {
 }
 
 .b-content__ingredients li::marker {
-  color: var(--brown-800, red);
+  color: var(--brown-800, brown);
 }
 
 .b-content__instructions h2 {
   font-family: "YoungSerif-Regular";
   font-size: 2.8rem;
-  color: var(--brown-800, red);
+  color: var(--brown-800, brown);
   margin-bottom: 2.4rem;
 }
 
@@ -171,7 +168,7 @@ html {
 .b-content__instructions li::marker {
   font-weight: bold;
   font-size: 1.6rem;
-  color: var(--brown-800, red);
+  color: var(--brown-800, brown);
 }
 
 .b-content__instructions strong {
@@ -187,7 +184,7 @@ html {
 .b-content__nutrition h2 {
   font-family: "YoungSerif-Regular";
   font-size: 2.8rem;
-  color: var(--brown-800, red);
+  color: var(--brown-800, brown);
 }
 
 .b-content__nutrition p {
@@ -213,7 +210,7 @@ html {
 }
 
 .b-content__nutrition td:nth-child(2) {
-  color: var(--brown-800, red);
+  color: var(--brown-800, brown);
   font-weight: bold;
 }
 
@@ -221,7 +218,44 @@ html {
   border-bottom: none;
 }
 
-/* Footer Sytles */
+/***** Tablet Styles *****/
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--stone-100, papayawhip);
+  }
+
+  .b-card {
+    width: 61.6rem;
+    margin: 12.8rem 0;
+    border-radius: 2.4rem;
+    padding: 4rem;
+    gap: 4rem;
+    background-color: white;
+  }
+
+  .b-card__image {
+    border-radius: 1.2rem;
+    margin: 0;
+  }
+
+  .b-content {
+    margin: 0;
+  }
+}
+
+/***** Desktop Styles *****/
+@media (min-width: 1440px) {
+  .b-card {
+    width: 73.6rem;
+  }
+}
+
+/***** Footer Sytles *****/
 .b-attribution {
   font-size: 1.1rem;
   text-align: center;
