@@ -66,14 +66,14 @@ html {
 
 .b-content__title h1 {
   font-size: 3.6rem;
-  font-family: "YoungSerif-Regular";
+  font-family: "YoungSerif-Regular", sans-serif;
   color: var(--stone-900, black);
   margin-bottom: 2.4rem;
 }
 
 .b-content__title p {
   font-size: 1.6rem;
-  font-family: "Outfit-Light";
+  font-family: "Outfit-Light", sans-serif;
   line-height: 150%;
   color: var(--stone-600, black);
 }
@@ -86,7 +86,7 @@ html {
 
 .b-content__preparation h2 {
   font-size: 2rem;
-  font-family: "Outfit-SemiBold";
+  font-family: "Outfit-SemiBold", sans-serif;
   color: var(--rose-800, brown);
   margin-bottom: 1.6rem;
 }
@@ -94,7 +94,7 @@ html {
 .b-content__preparation ul {
   display: flex;
   flex-direction: column;
-  font-family: "Outfit-Regular";
+  font-family: "Outfit-Regular", sans-serif;
   gap: 0.8rem;
 }
 
@@ -117,7 +117,7 @@ html {
 
 .b-content__ingredients h2 {
   font-size: 2.8rem;
-  font-family: "YoungSerif-Regular";
+  font-family: "YoungSerif-Regular", sans-serif;
   color: var(--brown-800, brown);
   margin-bottom: 2.4rem;
 }
@@ -125,7 +125,7 @@ html {
 .b-content__ingredients ul {
   display: flex;
   flex-direction: column;
-  font-family: "Outfit-Regular";
+  font-family: "Outfit-Regular", sans-serif;
   gap: 0.8rem;
 }
 
@@ -143,7 +143,7 @@ html {
 }
 
 .b-content__instructions h2 {
-  font-family: "YoungSerif-Regular";
+  font-family: "YoungSerif-Regular", sans-serif;
   font-size: 2.8rem;
   color: var(--brown-800, brown);
   margin-bottom: 2.4rem;
@@ -152,7 +152,7 @@ html {
 .b-content__instructions ol {
   display: flex;
   flex-direction: column;
-  font-family: "Outfit-Regular";
+  font-family: "Outfit-Regular", sans-serif;
   gap: 0.8rem;
 }
 
@@ -182,21 +182,21 @@ html {
 }
 
 .b-content__nutrition h2 {
-  font-family: "YoungSerif-Regular";
+  font-family: "YoungSerif-Regular", sans-serif;
   font-size: 2.8rem;
   color: var(--brown-800, brown);
 }
 
 .b-content__nutrition p {
   font-size: 1.6rem;
-  font-family: "Outfit-Regular";
+  font-family: "Outfit-Regular", sans-serif;
   line-height: 150%;
   color: var(--stone-600, black);
 }
 
 .b-content__nutrition table {
   font-size: 1.6rem;
-  font-family: "Outfit-Regular";
+  font-family: "Outfit-Regular", sans-serif;
   line-height: 150%;
   color: var(--stone-600, black);
 }
