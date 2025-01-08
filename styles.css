@@ -202,7 +202,7 @@ html {
 }
 
 .b-content__nutrition tr {
-  border-bottom: 1px solid var(--stone-150, lightgrey);
+  border-bottom: 0.1rem solid var(--stone-150, lightgrey);
 }
 
 .b-content__nutrition td {
@@ -220,7 +220,8 @@ html {
 
 /***** Tablet Styles *****/
 
-@media (min-width: 768px) {
+/* 48rem = 768px */
+@media (min-width: 48rem) {
   body {
     display: flex;
     flex-direction: column;
@@ -249,7 +250,8 @@ html {
 }
 
 /***** Desktop Styles *****/
-@media (min-width: 1440px) {
+/* 90rem = 1440px */
+@media (min-width: 90rem) {
   .b-card {
     width: 73.6rem;
   }
